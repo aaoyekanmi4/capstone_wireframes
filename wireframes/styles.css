@@ -1,0 +1,144 @@
+nav {
+    width:100%;
+    border-bottom:1px solid black;
+    height:30px;
+    background:lightgray;
+
+    
+}
+/* Landing */
+#steps {
+    margin-top:100px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+.step {
+    border: 1px solid black;  
+    width:300px;
+    height:300px;
+    margin:0;
+
+    background: gray;
+
+}
+
+#get-started {
+    width:200px;
+    font-size:16px;
+   
+}
+.button-holder {
+    margin: 30px auto;
+    width:fit-content;
+
+}
+/* Forms */
+form {
+    width:500px;
+    margin:10% auto;
+
+}
+h1 {
+    text-align:center;
+}
+input {
+    width:100%;
+    margin:10px 0px;
+}
+input[type="submit"] {
+    width:100%;
+    
+}
+/* Job List */
+ul {
+    list-style-type:none;
+  
+}
+span {
+    margin:0 20px;
+}
+li {
+    border:1px solid black;
+    margin:10px 0px;
+}
+a {
+    text-decoration:none;
+    color: black;
+    float:right;
+}
+.view-details {
+    float:right;
+    margin-right:10px;
+}
+#jobs-list-container {
+    width:600px;
+    margin:0 auto;
+}
+/* Detail View */
+#details-container{
+    text-align:center;
+}
+.job-and-status {
+    display:flex;
+    flex-direction:row;
+    height:33vh;
+    
+}
+#job-details {
+    flex:60%;
+    background-color:gray;
+}
+#job-status {
+    flex:40%;
+    background-color:lightgray;
+}
+#contacts {
+    border:1px solid black;
+    height:300px;
+    text-align:center;
+    display:flex;
+    flex-direction:row;
+}
+
+.contact {
+    
+    border:1px solid black;
+    width:400px;
+    height:300px;
+}
+/* Phone size screens*/
+@media screen and (max-width:600px) {
+    #jobs-list-container {
+        width:100%;
+        
+    }
+    li {
+        width:100%;
+    }
+
+    .contact {
+        width:100%;
+    }
+    span{
+        margin:0 2px;
+    }
+    ul {
+        margin:0 auto;
+        padding:0;
+    }
+    form {
+        width:100%;
+    }
+    .step {
+        margin:20px 0;
+    }
+    .job-and-status {
+    
+        flex-direction:column;
+    }
+    #job-details, #job-status {
+        flex:100%;
+    }
+
+}
